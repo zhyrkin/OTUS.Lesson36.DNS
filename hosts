@@ -1,0 +1,6 @@
+[ns]
+ns01        ansible_host=10.200.3.221
+ns02        ansible_host=10.200.3.222
+[clients]
+client1     ansible_host=10.200.3.223
+client2     ansible_host=10.200.3.224

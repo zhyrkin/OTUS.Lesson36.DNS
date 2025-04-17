@@ -1,0 +1,8 @@
+domain dns.lab
+search dns.lab
+{% if ansible_hostname == 'ns02' %}
+nameserver {{ hostvars['ns02']['ansible_host'] }}
+{% endif %}
+{% if ansible_hostname == 'ns01' %}
+nameserver {{ hostvars['ns01']['ansible_host'] }}
+{% endif %} 
